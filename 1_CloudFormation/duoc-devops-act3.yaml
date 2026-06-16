@@ -256,17 +256,22 @@ Resources:
   FrontendRepo:
     Type: AWS::ECR::Repository
     Properties:
-      RepositoryName: tienda-frontend
+      RepositoryName: front-despacho
 
-  BackendRepo:
+  BackVentasRepo:
     Type: AWS::ECR::Repository
     Properties:
-      RepositoryName: tienda-backend
+      RepositoryName: back-ventas
+    
+  BackDespachosRepo:
+    Type: AWS::ECR::Repository
+    Properties:
+      RepositoryName: back-despachos
 
   DbRepo:
     Type: AWS::ECR::Repository
     Properties:
-      RepositoryName: tienda-db
+      RepositoryName: db-mysql
 
 
 

@@ -1,4 +1,4 @@
-Despliegue tienda-perritos en EKS (namespace 'tienda')
+Despliegue devops-examen en EKS (namespace 'devops')
 
 1) Configurar kubectl contra tu cluster:
    aws eks update-kubeconfig --region us-east-1 --name <NOMBRE_TU_CLUSTER>
@@ -20,10 +20,10 @@ Despliegue tienda-perritos en EKS (namespace 'tienda')
    kubectl apply -f frontend-service.yaml
 
 6) Verificar:
-   kubectl get pods -n tienda
-   kubectl get svc tienda-frontend -n tienda
+   kubectl get pods -n devops
+   kubectl get svc devops-frontend -n devops
 
-Copias el EXTERNAL-IP (DNS del ELB) â†’ lo abres en el navegadorâ†’ deberÃ­as ver la pÃ¡gina de Tienda de Perritos í ½í°¶
+Copias el EXTERNAL-IP (DNS del ELB) â†’ lo abres en el navegadorâ†’ deberÃ­as ver la pÃ¡gina de Devops (Despachos y ventas) ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 Nota: Si te da error, y sale el pod con estado Pending (valida correctamente la configuraciÃ³n de la Actividad 1 â€“ paso 4).
 
